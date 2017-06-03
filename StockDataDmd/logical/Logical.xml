@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="9F6B7936-9F21-9F2E-4352-BAF580F7834E" mainViewID="4D704835-E736-683B-A916-50C1ADA0FEDD">
+<createdBy>Terence Pan</createdBy>
+<createdTime>2017-06-02 21:44:49 UTC</createdTime>
+<ownerDesignName>StockDataDmd</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

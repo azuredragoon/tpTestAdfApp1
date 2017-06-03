@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="StockDataDmd" id="F3B0256A-D5F7-ADEB-908A-BA35F8252F81" version="3.5">
+<createdBy>Terence Pan</createdBy>
+<createdTime>2017-06-02 21:44:49 UTC</createdTime>
+<ownerDesignName>StockDataDmd</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>F3B0256A-D5F7-ADEB-908A-BA35F8252F81</designId>
+</OSDM_Design>

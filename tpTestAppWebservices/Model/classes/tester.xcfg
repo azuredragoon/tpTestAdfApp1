@@ -1,0 +1,11 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BC4JConfig version="11.1" xmlns="http://xmlns.oracle.com/bc4j/configuration">
+   <AppModuleConfigBag ApplicationName="com.example.tp.app.tptestwebservices.model.appmodule.StockAM">
+      <AppModuleConfig name="15C6541EABC" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" DBconnection="java:comp/env/jdbc/Connection1DS" IsLazyLoadingTrue="true" JDBCName="Connection1" jbo.project="com.example.tp.app.tptestwebservices.model.Model" BC4JConfigName="StockAMLocal" DeployPlatform="LOCAL" ApplicationName="com.example.tp.app.tptestwebservices.model.appmodule.StockAM">
+         <Database jbo.sql92.JdbcDriverClass="org.postgresql.Driver" jbo.SQLBuilder="SQL92" jbo.TypeMapEntries="Java"/>
+         <Security AppModuleJndiName="com.example.tp.app.tptestwebservices.model.appmodule.StockAM"/>
+         <Tester FullProxyInterfaceName="com.example.tp.app.tptestwebservices.model.appmodule.common.StockAM"/>
+         <Custom JDBCDataSource="java:comp/env/jdbc/Connection1DS"/>
+      </AppModuleConfig>
+   </AppModuleConfigBag>
+</BC4JConfig>

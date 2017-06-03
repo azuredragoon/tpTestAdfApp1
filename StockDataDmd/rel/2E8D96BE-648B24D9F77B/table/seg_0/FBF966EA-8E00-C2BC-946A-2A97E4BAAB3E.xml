@@ -1,0 +1,155 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FBF966EA-8E00-C2BC-946A-2A97E4BAAB3E" name="StockSnapshotData">
+<createdBy>Terence Pan</createdBy>
+<createdTime>2017-06-02 22:01:02 UTC</createdTime>
+<generatorID>CF16D0FC-33CB-5B4E-FDB3-3B829720BE2A</generatorID>
+<ownerDesignName>StockDataDmd</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="StockSnapshotUID" id="765AB315-6025-54E6-380A-4F499EF1623A">
+<createdBy>Terence Pan</createdBy>
+<createdTime>2017-06-02 22:01:02 UTC</createdTime>
+<generatorID>E0376CCC-B44A-23C0-5A1B-1F8B3BB852F9</generatorID>
+<ownerDesignName>StockDataDmd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Price" id="3A69FA0A-7D8E-4585-D68A-0D2B433505B9">
+<createdBy>Terence Pan</createdBy>
+<createdTime>2017-06-02 22:01:02 UTC</createdTime>
+<generatorID>7D70D427-1BEE-7264-785E-AC14AE67AF4B</generatorID>
+<ownerDesignName>StockDataDmd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EPS" id="0738387B-088D-B0E6-0B7F-65A67EA0693F">
+<createdBy>Terence Pan</createdBy>
+<createdTime>2017-06-02 22:01:02 UTC</createdTime>
+<generatorID>1156FCAC-A354-A6B5-AE52-4A97D5299971</generatorID>
+<ownerDesignName>StockDataDmd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Dividend" id="CB3D3352-C009-2C89-7CE2-289E5240656F">
+<createdBy>Terence Pan</createdBy>
+<createdTime>2017-06-02 22:01:02 UTC</createdTime>
+<generatorID>B33588D9-8C00-3A13-D8F4-F06B2247BCFE</generatorID>
+<ownerDesignName>StockDataDmd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CreatedBy" id="A4580975-2051-7768-E61A-EE7E648B3BC4">
+<createdBy>Terence Pan</createdBy>
+<createdTime>2017-06-02 22:01:02 UTC</createdTime>
+<generatorID>4E148910-12AD-04D8-0DF1-37B5A726AF92</generatorID>
+<ownerDesignName>StockDataDmd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CreatedDate" id="660EDCDF-F1C4-F04B-9CF9-BD5125E3E2B6">
+<createdBy>Terence Pan</createdBy>
+<createdTime>2017-06-02 22:01:02 UTC</createdTime>
+<generatorID>7258665D-36FC-7476-88E8-6901E564D8CE</generatorID>
+<ownerDesignName>StockDataDmd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ModifiedBy" id="D72FF82B-B626-52AB-3781-22B4347CFE73">
+<createdBy>Terence Pan</createdBy>
+<createdTime>2017-06-02 22:01:02 UTC</createdTime>
+<generatorID>A7EA58F4-2AB2-BF63-8C3A-8C37915B9327</generatorID>
+<ownerDesignName>StockDataDmd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ModifiedDate" id="BAD78225-16DB-5D81-33FD-C7B15786FFBA">
+<createdBy>Terence Pan</createdBy>
+<createdTime>2017-06-02 22:01:02 UTC</createdTime>
+<generatorID>91514FBF-A6AD-90FC-A6AF-7B568B17E31C</generatorID>
+<ownerDesignName>StockDataDmd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Stock_StockUID" id="37F7D0F9-F611-CF4A-CEED-2ACD046E3759">
+<createdBy>Terence Pan</createdBy>
+<createdTime>2017-06-02 22:01:02 UTC</createdTime>
+<generatorID>1A8EB73A-7DE7-7491-5237-B9F499EA05FD</generatorID>
+<ownerDesignName>StockDataDmd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="83340EB0-C392-8BE2-57BE-B4D04DF8980B" referredColumn="D5AC07DB-B782-C5E2-BE68-5E13DF335079"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="68D5D2C7-77B3-84D5-000B-8F809B8E8214" name="StockSnapshotData_PK">
+<createdBy>Terence Pan</createdBy>
+<createdTime>2017-06-02 22:01:02 UTC</createdTime>
+<generatorID>81049F88-DE42-A50A-5CB5-D08B23018934</generatorID>
+<ownerDesignName>StockDataDmd</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="765AB315-6025-54E6-380A-4F499EF1623A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D0738779-2BA1-19A8-8A38-FCA1EC3D677D" name="StockSnapshotData_Stock_FK">
+<createdBy>Terence Pan</createdBy>
+<createdTime>2017-06-02 22:01:02 UTC</createdTime>
+<generatorID>CA6EE65E-FEE7-5CA5-6097-396286B2F5BC</generatorID>
+<ownerDesignName>StockDataDmd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="37F7D0F9-F611-CF4A-CEED-2ACD046E3759"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

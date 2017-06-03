@@ -1,0 +1,6 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="Table" objectID="597AC0B1-86F0-D280-E5F8-BC3EF3FEC71D" name="Stock" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.relational.Table" propertyParentId="2E8D96BE-33B7-E372-3647-648B24D9F77B" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Table" objectID="FBF966EA-8E00-C2BC-946A-2A97E4BAAB3E" name="StockSnapshotData" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.relational.Table" propertyParentId="2E8D96BE-33B7-E372-3647-648B24D9F77B" propertySourceId="" propertyTargetId=""/>
+   <object objectType="FKIndexAssociation" objectID="83340EB0-C392-8BE2-57BE-B4D04DF8980B" name="StockSnapshotData_Stock_FK" containerID="FBF966EA-8E00-C2BC-946A-2A97E4BAAB3E" refContainerID="597AC0B1-86F0-D280-E5F8-BC3EF3FEC71D" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" propertyParentId="2E8D96BE-33B7-E372-3647-648B24D9F77B" propertySourceId="597AC0B1-86F0-D280-E5F8-BC3EF3FEC71D" propertyTargetId="FBF966EA-8E00-C2BC-946A-2A97E4BAAB3E"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>
