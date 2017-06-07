@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Application xmlns="http://xmlns.oracle.com/adfm/application"
+             version="11.1.1.64.93" id="DataBindings" SeparateXMLFiles="false"
+             Package="com.example.tp.app.tptestwebservices.view" ClientType="Generic">
+  <pageMap>
+    <page path="/SampleStockApiCall.jspx"
+          usageId="com_example_tp_app_tptestwebservices_view_SampleStockApiCallPageDef"/>
+    <page path="/WEB-INF/SampleStockRestApiCall.xml#SampleStockRestApiCall@loadData"
+          usageId="com_example_tp_app_tptestwebservices_view_SampleStockRestApiCall_SampleStockRestApiCall_loadDataPageDef"/>
+  </pageMap>
+  <pageDefinitionUsages>
+    <page id="com_example_tp_app_tptestwebservices_view_SampleStockApiCallPageDef"
+          path="com.example.tp.app.tptestwebservices.view.pageDefs.SampleStockApiCallPageDef"/>
+    <page id="com_example_tp_app_tptestwebservices_view_SampleStockRestApiCall_SampleStockRestApiCall_loadDataPageDef"
+          path="com.example.tp.app.tptestwebservices.view.pageDefs.SampleStockRestApiCall_SampleStockRestApiCall_loadDataPageDef"/>
+  </pageDefinitionUsages>
+  <dataControlUsages>
+    <dc id="YahooFinanceCsvCall"
+        path="com.example.tp.app.tptestwebservices.model.YahooFinanceCsvCall"/>
+  </dataControlUsages>
+</Application>

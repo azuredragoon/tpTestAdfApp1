@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel"
+                version="11.1.1.64.93" id="SampleStockApiCallPageDef"
+                Package="com.example.tp.app.tptestwebservices.view.pageDefs">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables">
+      <variable Type="java.lang.String" Name="loadData_StockSymbol"
+                IsQueriable="false"/>
+    </variableIterator>
+    <methodIterator Binds="loadData.result" DataControl="YahooFinanceCsvCall"
+                    RangeSize="25"
+                    BeanClass="com.example.tp.app.tptestwebservices.model.YahooFinanceCsvCall.loadData_Data"
+                    id="loadDataIterator"/>
+  </executables>
+  <bindings>
+    <methodAction id="loadData" RequiresUpdateModel="true" Action="invokeMethod"
+                  MethodName="loadData" IsViewObjectMethod="false"
+                  DataControl="YahooFinanceCsvCall"
+                  InstanceName="YahooFinanceCsvCall"
+                  ReturnName="data.YahooFinanceCsvCall.methodResults.loadData_YahooFinanceCsvCall_loadData_result">
+      <NamedData NDName="StockSymbol" NDType="java.lang.String"
+                 NDValue="${bindings.loadData_StockSymbol}"/>
+    </methodAction>
+    <attributeValues IterBinding="variables" id="StockSymbol">
+      <AttrNames>
+        <Item Value="loadData_StockSymbol"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="loadDataIterator" id="Column0">
+      <AttrNames>
+        <Item Value="Column0"/>
+      </AttrNames>
+    </attributeValues>
+  </bindings>
+</pageDefinition>

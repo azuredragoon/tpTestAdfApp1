@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel"
+                version="11.1.1.64.93"
+                id="SampleStockRestApiCall_SampleStockRestApiCall_loadDataPageDef"
+                Package="com.example.tp.app.tptestwebservices.view.pageDefs"
+                SkipValidation="true">
+  <parameters/>
+  <executables/>
+  <bindings>
+    <methodAction id="loadData" RequiresUpdateModel="true" Action="invokeMethod"
+                  MethodName="loadData" IsViewObjectMethod="false"
+                  DataControl="YahooFinanceCsvCall"
+                  InstanceName="YahooFinanceCsvCall"
+                  ReturnName="data.YahooFinanceCsvCall.methodResults.loadData_YahooFinanceCsvCall_loadData_result">
+      <NamedData NDName="StockSymbol"
+                 NDValue="#{pageFlowScope.StockCallBean.defaultStockValue}"
+                 NDType="java.lang.String"/>
+    </methodAction>
+  </bindings>
+</pageDefinition>

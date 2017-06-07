@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1"
+          xmlns:f="http://java.sun.com/jsf/core"
+          xmlns:h="http://java.sun.com/jsf/html"
+          xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+  <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+  <f:view>
+    <af:document id="d1">
+      <af:messages id="m1"/>
+      <af:form id="f1">
+        <af:panelFormLayout id="pfl1">
+          <af:inputText value="#{bindings.StockSymbol.inputValue}"
+                        label="Stock Symbol"
+                        required="#{bindings.StockSymbol.hints.mandatory}"
+                        columns="#{bindings.StockSymbol.hints.displayWidth}"
+                        maximumLength="#{bindings.StockSymbol.hints.precision}"
+                        shortDesc="#{bindings.StockSymbol.hints.tooltip}"
+                        id="it2">
+            <f:validator binding="#{bindings.StockSymbol.validator}"/>
+          </af:inputText>
+          <af:commandButton actionListener="#{bindings.loadData.execute}"
+                            text="loadData"
+                            disabled="#{!bindings.loadData.enabled}" id="cb1"/>
+        </af:panelFormLayout>
+        <af:inputText value="#{bindings.Column0.inputValue}"
+                      label="Stock Price"
+                      required="#{bindings.Column0.hints.mandatory}"
+                      columns="#{bindings.Column0.hints.displayWidth}"
+                      maximumLength="#{bindings.Column0.hints.precision}"
+                      shortDesc="#{bindings.Column0.hints.tooltip}" id="it1">
+          <f:validator binding="#{bindings.Column0.validator}"/>
+        </af:inputText>
+      </af:form>
+    </af:document>
+  </f:view>
+</jsp:root>

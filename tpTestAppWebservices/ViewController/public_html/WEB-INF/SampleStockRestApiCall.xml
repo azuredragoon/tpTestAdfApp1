@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<adfc-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.2">
+  <task-flow-definition id="SampleStockRestApiCall">
+    <default-activity id="__1">loadData</default-activity>
+    <managed-bean id="__3">
+      <managed-bean-name id="__5">StockCallBean</managed-bean-name>
+      <managed-bean-class id="__2">com.example.tp.app.tptestwebservices.view.beans.StockExampleBean</managed-bean-class>
+      <managed-bean-scope id="__4">pageFlow</managed-bean-scope>
+    </managed-bean>
+    <view id="SampleStockApiCall">
+      <page>/SampleStockApiCall.jspx</page>
+    </view>
+    <method-call id="loadData">
+      <method>#{bindings.loadData.execute}</method>
+      <outcome id="__6">
+        <fixed-outcome>loadData</fixed-outcome>
+      </outcome>
+    </method-call>
+    <control-flow-rule id="__7">
+      <from-activity-id id="__8">loadData</from-activity-id>
+      <control-flow-case id="__9">
+        <from-outcome id="__11">loadData</from-outcome>
+        <to-activity-id id="__10">SampleStockApiCall</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <visibility id="__12">
+      <url-invoke-allowed/>
+    </visibility>
+  </task-flow-definition>
+</adfc-config>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.64.93"
+          id="YahooFinanceCsvCall"
+          Package="com.example.tp.app.tptestwebservices.model"
+          BeanClass="com.example.tp.app.tptestwebservices.model.YahooFinanceCsvCall"
+          isJavaBased="false">
+  <MethodAccessor
+                  Type="com.example.tp.app.tptestwebservices.model.YahooFinanceCsvCall.loadData_Data"
+                  BeanClass="com.example.tp.app.tptestwebservices.model.YahooFinanceCsvCall.loadData_Data"
+                  id="loadData" ReturnNodeName="Return"
+                  CollectionBeanClass="com.example.tp.app.tptestwebservices.model.YahooFinanceCsvCall.loadData_Data_Operations">
+    <ParameterInfo id="StockSymbol" Type="java.lang.String"
+                   isStructured="false"/>
+  </MethodAccessor>
+</JavaBean>
